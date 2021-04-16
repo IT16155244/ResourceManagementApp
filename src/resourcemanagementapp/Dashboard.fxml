@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="dashboradpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resourcemanagementapp.DashboardController">
+   <children>
+      <Label layoutX="55.0" layoutY="75.0" text="Dashboard" textFill="#6f6e6e" AnchorPane.leftAnchor="55.0">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Circle fill="#aeaeae" layoutX="67.0" layoutY="55.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#6b6a6a" layoutX="100.0" layoutY="55.0" radius="12.0" stroke="#141414" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#aeaeae" layoutX="133.0" layoutY="55.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#cdcdcd" layoutX="938.0" layoutY="53.0" opacity="0.34" radius="108.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="54.0" />
+      <Circle fill="#cdcdcd" layoutX="1146.0" layoutY="122.0" opacity="0.47" radius="74.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="-20.0" />
+      <Label layoutX="990.0" layoutY="19.0" text="Resource" textFill="#808080" AnchorPane.rightAnchor="76.0">
+         <font>
+            <Font name="Calibri Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="990.0" layoutY="51.0" text="Management" textFill="#808080" AnchorPane.rightAnchor="14.0">
+         <font>
+            <Font name="Calibri Bold" size="35.0" />
+         </font>
+      </Label>
+      <Pane layoutY="146.0" prefHeight="554.0" prefWidth="320.0" style="-fx-background-color: white; -fx-background-radius: 0px 40px 0px 0px;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="146.0">
+         <effect>
+            <DropShadow color="#979797" height="5.84" radius="19.427500000000002" width="73.87" />
+         </effect>
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" prefHeight="69.0" prefWidth="320.0" style="-fx-background-color: #cfcc02; -fx-background-radius: 0px 40px 0px 0px;" text="Add Session" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="271.0" onAction="#clickManageLecturers" prefHeight="69.0" prefWidth="320.0" text="Manage Lecurers" textFill="#5e5e5e">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="409.0" onAction="#clickManageSubjects" prefHeight="69.0" prefWidth="320.0" text="Manage Subjects" textFill="#5e5e5e">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="478.0" onAction="#clickManageLocations" prefHeight="69.0" prefWidth="320.0" text="Manage Locations" textFill="#5e5e5e">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="69.0" prefHeight="69.0" prefWidth="320.0" text="Manage Sessions" textFill="#5e5e5e">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="207.0" onAction="#clickManageTags" prefHeight="69.0" prefWidth="320.0" text="Manage Tags" textFill="#5e5e5e">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="340.0" onAction="#clickManageStudents" prefHeight="69.0" prefWidth="320.0" text="Manage Student Groups" textFill="#5e5e5e">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutY="138.0" prefHeight="69.0" prefWidth="320.0" text="Add Working Days" textAlignment="CENTER" textFill="#686868" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Label layoutX="446.0" layoutY="347.0" opacity="0.22" prefHeight="107.0" prefWidth="658.0" text="Sprint - 2 Area" textFill="#6f6e6e">
+         <font>
+            <Font name="Arial Bold" size="93.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
