@@ -17,7 +17,7 @@ import javafx.stage.Stage;
  * @author thilr_88qp6ap
  */
 public class ResourceManagementApp extends Application {
-    
+    // Thank you
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
